@@ -11,37 +11,139 @@
     <link rel="stylesheet" href="style.css">
     <title>Country info App</title>
   </head>
-  <body>
-    <nav id="nav-bar">
-        <p>Where in the world? </p>
+  <body id="" class=" body light-body"  >
+   <div id="nav-container" class="mode light-mode mb-5 py-2">
+    <nav  id="nav-bar">
+      <p>Where in the world? </p>
 
-        <button href="#"> Dark Mode</button>
-    </nav>
-    <div class="container-fluid ">
-        <div id="filter-container" class="row justify-content-between ">
-            <div class="search-div col-12 col-lg-4  mb-5 ">
-                <input  class="w-100" placeholder="Search for a country..." type="search" name="search-input" id="search-input">
+      <button class="my-btn" id="theme-btn" href="#"> Dark Mode</button>
+  </nav>
+   </div>
+
+   <section id="main-section">
+    <div class="container-fluid mb-5">
+      <div id="filter-container" class="row justify-content-between ">
+          <div class="search-div col-12 col-lg-4  mb-5 ">
+              <input  class="w-100 mode light-mode" placeholder="Search for a country..." type="search" name="search-input" id="search-input">
+          </div>
+          <div class=" col-12 col-lg-2">
+              <select class="mode light-mode" id="filter">
+                  <option value="all">Filter by Region</option>
+                  <option value="africa">Africa</option>
+                  <option value="americas">Americas</option>
+                  <option value="asia">Asia</option>
+                  <option value="europe">Europe</option>
+                  <option value="oceania">Oceania</option>
+                </select>
+          </div>
+
+      </div>
+      
+  </div>
+
+
+  
+
+    <section id="country-section">
+        <div class="countries-countainer container-fluid">
+            <div class="row" id="insert-countries">
+                <div style="border-radius: 15px;" class="mx-auto mb-5 col-12 col-lg-3 col-md-5 col-sm-8">
+                  <div class="my-card mode light-mode">
+                    <img src="https://restcountries.eu/data/col.svg" class="img-fluid" alt="...">
+                  <div class="card-body">
+                      <h5 class=" my-btn font-weight-bold country-btn mb-3 ">Nigeria</h5>
+                      <div class="">
+                        <p><span class="font-weight-bold">Population: </span> ${}</p>
+                        <p><span class="font-weight-bold">Region: </span>${}</p>
+                        <p><span class="font-weight-bold">Capital: </span>${}</p>
+                      </div>
+                      <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+                    </div>
+                  </div>
+                </div> 
             </div>
-            <div class="col-12 col-lg-2">
-                <select id="filter">
-                    <option value="all">Filter by Region</option>
-                    <option value="africa">Africa</option>
-                    <option value="america">America</option>
-                    <option value="asia">Asia</option>
-                    <option value="europe">Europe</option>
-                    <option value="oceania">Oceania</option>
-                  </select>
+        </div>
+    </section>
+   </section>
+ 
+
+      <section id="single-country" class="container-fluid mode light-mode ">
+      <div class="row ">
+        <div class="col-12 mb-5">
+          <button id="back-btn" class="my-btn " > -- Back</button>
+        </div>
+        <div id="insert-country" class="country-container col-12 row align-items-center justify-content-between" >
+          <!-- <div class="country-img col-12 col-md-5 mb-4">
+            <img src="https://restcountries.eu/data/col.svg" class="img-fluid" alt="...">
+          </div>
+          <div class="country-details col-12 col-lg-6">
+            <h2 class="mb-4" >Country Name</h2>
+            <div class="tiny-details row justify-content-between">
+              <div class="first-half col-12 col-md-5 mb-4">
+                <p><span class="font-weight-bold">Native Name: </span> ${}</p>
+                <p><span class="font-weight-bold">Population: </span>${}</p>
+                <p><span class="font-weight-bold">Region: </span>${}</p>
+                <p><span class="font-weight-bold">Sub Region: </span>${}</p>
+                <p><span class="font-weight-bold">Capital: </span>${}</p>
+              </div>
+              <div class="second-half col-12 col-md-5">
+                <p><span class="font-weight-bold">Top Level Domain: </span> ${}</p>
+                <p><span class="font-weight-bold">Currencies: </span>${}</p>
+                <p><span class="font-weight-bold">Languages: </span>${}</p>
+              </div>
+            </div>
+
+            <div class="border-countries mt-4"><p><span class="font-weight-bold mr-3">Languages: </span>${}
+              <button> France</button>
+              <button> Germany</button>
+              <button> Netherland</button>
+            </p>
+            </div>
+
+          </div> -->
+
+        </div>
+      </div>
+        
+
+
+      </section>
+
+
+      <!-- <section id="country-section">
+        <div class="country-countainer container-fluid">
+            <div class="row">
+                <div class=" my-card col-12 col-lg-3 col-md-5 col-sm-8">
+                  <div class="mx-auto">
+                    <img src="https://restcountries.eu/data/col.svg" style="min-width: 100%;" class="img-fluid" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Cardwerfgfwqedr title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      </div>
+                  </div>
+
+                </div>
             </div>
 
         </div>
-        
-    </div>
+
+     </section> -->
+
+
+
+    
+
+   
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <script src="countryapi.js"></script>
+    <script src="ui.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>
 

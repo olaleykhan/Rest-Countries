@@ -4,10 +4,45 @@
     margin: 0;
     padding: 0;
 }
+p{
+    margin-bottom: 3px;
+}
+button{
+    outline: none !important;
+}
+/* body{
+    
+} */
 
-body{
+
+
+/* The code below is for giving the theme changing effect including the hover of the buttons 
+in both light and dark mode */
+.light-mode{
+    background-color:hsl(0, 0%, 100%);
+    color:  hsl(200, 15%, 8%);
+}
+.light-mode .my-btn, .dark-mode .my-btn:hover{
+    background-color:hsl(0, 0%, 100%);
+    color:  hsl(200, 15%, 8%) !important;
+    outline: none;
+}
+.dark-mode{
+    background-color: hsl(209, 23%, 22%) !important;
+    color: hsl(0, 0%, 100%) !important;
+}
+.dark-mode .my-btn,.light-mode .my-btn:hover{
+    background-color: hsl(209, 23%, 22%);
+    color: hsl(0, 0%, 100%) !important;
+    outline: none;
+}
+.light-body{
     background-color: hsl(0, 0%, 95%);
 }
+.dark-body{
+    background-color: hsl(207, 26%, 17%);
+}
+
 
 
 
@@ -29,6 +64,8 @@ nav p{
 nav button{
     border: none;
     background-color: inherit;
+    border-radius: 5px;
+    padding: 5px 10px;
 }
 
 
@@ -36,17 +73,18 @@ nav button{
 
 .search-div input{
     border:none;
-    background-color: hsl(0, 0%, 100%);
+    /* background-color: red; */
     padding: 10px 30px;
     border-radius: 5px;
 }
 
 #filter{
     width: 15rem;
-    background-color: inherit;
+    /* background-color: inherit; */
     cursor: pointer;
     padding: 10px 30px;
     border-radius: 5px;
+    outline: none;
 }
 #filter-container{
     width: 85vw;
@@ -56,3 +94,90 @@ nav button{
 /* #filter:hover{
     background-color: red;
 } */
+
+
+/* ***************Card section**************** */
+
+.my-card{
+    /* border: 1px solid #0000ff; */
+    border-radius: 10px;
+    ;
+}
+.countries-countainer{
+    width: 90vw;
+    margin: 0 auto;
+}
+
+.country-btn{
+    /* text-align: center; */
+    display: inline-block;
+    padding: 6px 0px;
+    /* border: 1px solid hsl(209, 23%, 22%); */
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+.country-btn:hover{
+    padding: 6px 16px;
+}
+
+/* img{
+
+    height: 180px;
+    width: 100%;
+    object-fit: fill;
+} */
+
+
+/**************** This right here styles the single country page */
+
+#back-btn{
+    margin-top: 20px;
+    margin-left: 20px;
+    outline: none !important;
+    border: none;
+    /* background-color: inherit; */
+    /* border-radius: 5px; */
+    padding: 5px 30px;
+    border-radius: 45px;
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+}
+#single-country{
+    width:  90vw;
+    margin : 0 auto;
+}
+#single-country .row{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#insert-country{
+    min-height: 60vh;
+}
+
+#country-img{
+    /* height: 50vh; */
+    height: auto;
+    max-width: 100%;
+    object-fit: fill;
+}
+
+
+
+#single-country{
+    display: none;
+}
+
+#main-section{
+    display: block;
+
+}
+
+
+
+
+
+
+
+
