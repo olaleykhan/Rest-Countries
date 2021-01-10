@@ -23,7 +23,7 @@ in both light and dark mode */
     color:  hsl(200, 15%, 8%);
 }
 .light-mode .my-btn, .dark-mode .my-btn:hover{
-    background-color:hsl(0, 0%, 100%);
+    background-color:hsl(0, 0%, 95%);
     color:  hsl(200, 15%, 8%) !important;
     outline: none;
 }
@@ -111,7 +111,7 @@ nav button{
 .country-btn{
     /* text-align: center; */
     display: inline-block;
-    padding: 6px 0px;
+    padding: 6px 16px;
     /* border: 1px solid hsl(209, 23%, 22%); */
     border-radius: 5px;
     cursor: pointer;
@@ -173,6 +173,23 @@ nav button{
     display: block;
 
 }
+
+
+ .bc-ct-tx{ /*this is placed on a stubborn border country buttons tag that keeps wrapping and makes the css  ugly */
+    white-space: nowrap;
+
+}
+
+.border-countries{
+    display: flex;
+    /* align-items: center; */
+    /* white-space: nowrap; */
+}
+.border-country-btn{
+    margin-bottom: 20px;
+    
+}
+
 
 
 

@@ -140,8 +140,10 @@ function getCountryByName(e){
    
 }
 
-// The function below is called when any of the border buttons that comes with the single country 
-// page is clicked . it takes us from a detailed page to the detailed page of the border country clicked. 
+// The function below is called when any of the border buttons that
+//  comes with the single country 
+// page is clicked . it takes us from a detailed page to the detailed 
+// page of the border country clicked. 
 
 function getCountryByCode(e){
     if(e.target.classList.contains('border-country-btn')){

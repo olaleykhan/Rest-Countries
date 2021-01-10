@@ -79,7 +79,7 @@ class UI{
               </div>
             </div>
 
-            <div class="border-countries mt-4"><p><span class="font-weight-bold mr-3">Border Countries: </span>${this.createBtn(country.borders)}
+            <div class="border-countries mt-4"><span class="font-weight-bold bc-ct-tx mr-3">Border Countries: </span> <p>${this.createBtn(country.borders)}
              
             </p>
             </div>
